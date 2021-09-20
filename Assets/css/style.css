@@ -1,0 +1,103 @@
+/* Universal settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkest: #2f4454;
+    --dark: #2e151b;
+    --pink: #da7b93;
+    --lightjade: #376e6f;
+    --darkjade: #1c3334;
+    --white: white;
+    --font-style: 'Kanit', sans-serif;
+}
+
+hr {
+    background-color: var(--pink);
+    border-width: thick;
+}
+
+/* Navigation bars style */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-style);
+    background-color: rgba(47, 68, 84, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 25px 30px;
+}
+
+.navbar ul li {
+    font-family: var(--font-style);
+    font-size: 150%;
+    font-weight: normal;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 8px 25px;
+    transition: all 0.7s ease;
+}
+.navbar ul li a:hover {
+    background-color: var(--white);
+    color: var(--darkest);
+    box-shadow: 5px 5px 4px var(--pink); 
+    font-weight: bolder; 
+}
+
+/* Home section style */
+#home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(47, 68, 84, 0.3);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("background.jpeg") no-repeat center center/cover;
+    top: 0;
+    right: 0;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.header {
+    font-family: var(--font-style);
+    font-size: 300%;
+    margin: 30px;
+    text-align: center;
+}
+
+/* About section style */
+h2 {
+    font-family: var(--font-style);
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    position: center;
+}
