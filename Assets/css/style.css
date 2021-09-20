@@ -12,12 +12,12 @@
     --lightjade: #376e6f;
     --darkjade: #1c3334;
     --white: white;
-    --font-style: 'Kanit', sans-serif;
+    --font-style: 'Exo', sans-serif, 'Kanit', sans-serif;
 }
 
 hr {
-    background-color: var(--pink);
-    border-width: thick;
+    background-color: var(--lightjade);
+    border-width: medium;
 }
 
 /* Navigation bars style */
@@ -26,7 +26,7 @@ hr {
     justify-content: center;
     align-items: center;
     font-family: var(--font-style);
-    background-color: rgba(47, 68, 84, 0.5);
+    background-color: rgba(218, 123, 147, 0.5);
     position: sticky;
     top: 0;
 }
@@ -52,7 +52,7 @@ hr {
 .navbar ul li a:hover {
     background-color: var(--white);
     color: var(--darkest);
-    box-shadow: 5px 5px 4px var(--pink); 
+    box-shadow: 5px 5px 4px var(--lightjade); 
     font-weight: bolder; 
 }
 
@@ -61,7 +61,7 @@ hr {
     display: flex;
     flex-direction: column;
     background-color: rgba(47, 68, 84, 0.3);
-    height: 840px;
+    height: 825px;
     justify-content: center;
     align-items: center;
     color: var(--white);
@@ -76,7 +76,6 @@ hr {
     height: 900px;
     width: 100%;
     z-index: -1;
-    /* opacity: 0.9; */
 }
 
 .main {
@@ -86,7 +85,7 @@ hr {
     top: 20%;
     left: 10%;
 }
-.header {
+.heading {
     font-family: var(--font-style);
     font-size: 300%;
     margin: 30px;
@@ -94,10 +93,74 @@ hr {
 }
 
 /* About section style */
-h2 {
+#about {
     font-family: var(--font-style);
-    font-size: 150%;
     display: flex;
     flex-direction: column;
-    position: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#avatar {
+    display: flex;
+}
+
+#me {
+    width: 580px;
+    height: 410px;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+
+#intro h2 {
+    font-size: 200%;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: x-large;
+    line-height: 1.5;
+}
+
+/* work section style */
+
+#work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    /* border: solid var(--darkjade) 3px; */
+    /* padding: 5px; */
+}
+
+.card img {
+    border: 5px solid var(--pink);
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+.card img:hover {
+    box-shadow: 5px 5px 4px var(--pink);
+    opacity: 1;
+}
+
+.card-title {
+    /* box-sizing: border-box; */
+    position: relative;
+    width: 180px;
+    display: block;
+    border: 5px solid var(--pink);
+    margin: -40px, 0, 15px, 0;
 }
