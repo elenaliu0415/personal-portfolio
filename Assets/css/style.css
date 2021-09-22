@@ -225,17 +225,22 @@ footer {
   }
 
   h1 {
-    font-size: 200%;
+    font-size: 150%;
   }
 
   h2 {
-    font-size: 150%;
-    border-bottom: 3px solid var(--darkest);
+    width: 100%;
+    font-size: 100%;
+    display: block;
+    border-right: 3px solid var(--darkest);
   }
 
   .heading {
-    padding-bottom: 0.8rem;
-    /* text-align: center; */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
   }
 
   .navbar ul li {
@@ -246,5 +251,10 @@ footer {
     flex-direction: column;
   }
 
+  #me {
+    width: 100%;
+  }
   
-}
+  #intro {
+    width: 100%;
+  }
