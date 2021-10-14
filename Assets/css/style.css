@@ -207,12 +207,6 @@ p {
   font-weight: 900;
 }
 
-/* Resume Section Style */
-#resume {
-  display: flex;
-  background-color: rgba(218, 123, 147, 0.2);
-}
-
 /* footer section style */
 footer {
   display: block;
@@ -265,9 +259,21 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 475px) {
-  body {
-    width: 100%;
+@media screen and (max-width: 425px) {
+
+  .navbar ul {
+    display: inline;
+
+  }
+  .navbar ul li {
+    display: inline;
+    text-align: left;
+  }
+
+  .navbar ul li a {
+  padding: 10px 30px 10px 0;
+  display: inline;
+  max-width: 80%;
   }
 
   .heading {
@@ -281,9 +287,6 @@ a:visited {
     border-right: none;
     width: auto;
   }
-  .navbar {
-    flex-wrap: wrap;
-  }
 
   #contact {
     display: block;
@@ -293,9 +296,22 @@ a:visited {
   .contents {
     width: 100%;
   }
+
+  #about {
+    display: block;
+  }
+
+  #work {
+    display: block;
+  }
+
+  .card-container {
+    display: block;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
 
-/* #contact {
-  display: block;
-  text-align: center;
-}
